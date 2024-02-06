@@ -55,6 +55,12 @@ import {
       title: "Backend Developer",
       icon: backend,
     },
+
+    {
+      title:'Full stack developer',
+      icon:creator,
+    }
+  
   
   ];
   
