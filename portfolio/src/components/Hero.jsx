@@ -44,25 +44,7 @@ const Hero = () => {
       justify-center
       item-center
       '>
-      <a href='#about'>
-        <div className='w-[35px] 
-        h-[64px]
-        rounded-3x1 border-4 border-secondary
-        flex justify-center itmes-start p-2'>
-        <motion.dev
-          animate={{
-            y: [0, 24, 0],
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: 'loop',
-          }}
-          className='w-3 h-3 mb-1 bg-secondary rounded-full'
-        />
-
-        </div>
-      </a>
+     
 
       </div>
     </section>

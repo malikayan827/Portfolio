@@ -17,6 +17,7 @@ import {
     docker,
     meta,
     starbucks,
+    ozeefy,
     tesla,
     shopify,
     carrent,
@@ -24,6 +25,19 @@ import {
     tripguide,
     threejs,
     python,
+    webA,
+    emotiondetectorapp,
+    templates,
+    supershoestore,
+    visual,
+    android,
+    worldoldest,
+    dr,
+    predictingcreditcard,
+    netflix,
+    stockdataextraction,
+    concrete,
+    mobile1,
     
   } from "../assets";
   
@@ -127,7 +141,9 @@ import {
   const experiences = [
     {
       title: "Frontend Developer Intern",
-      company_name: "Ozeefy",
+      company: "Ozeefy",
+      icon: ozeefy,
+      iconBg: "black",
       
       date: "June 2022 - August 2022",
       points: [
@@ -137,8 +153,8 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
         
         
-      ],}
-    // },
+      ],
+     },
     // {
     //   title: "React Native Developer",
     //   company_name: "Tesla",
@@ -280,25 +296,29 @@ import {
           name: "Ecom Web-App",
           description: "Full-fledged e-commerce web application developed using the MERN stack.",
           technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-          source_code_link: "https://github.com/",
+          source_code_link: "https://github.com/malikayan827/Ecommerce-Web-App",
+          image:webA
         },
         {
           name: "Ecom Mobile-App",
           description: "E-commerce mobile application developed using React Native and Firebase.",
           technologies: ["React Native", "Firebase"],
-          source_code_link: "https://github.com/",
+          source_code_link: "https://github.com/malikayan827/ecommerce",
+          image:mobile1
         },
         {
           name: "Emotion Detector App",
           description: "Python Flask application for detecting emotions in images.",
           technologies: ["Python", "Flask"],
-          source_code_link: "https://github.com/",
+          source_code_link: "https://github.com/malikayan827/Emotion-Detector-App",
+          image:emotiondetectorapp
         },
         {
           name: "Website Templates",
           description: "Collection of website templates created using HTML/CSS.",
           technologies: ["HTML", "CSS"],
-          source_code_link: "https://github.com/",
+          source_code_link: "https://github.com/malikayan827/HTML-CSS",
+          image:templates
         },
       ],
     },
@@ -309,7 +329,8 @@ import {
           name: "Shoe Store",
           description: "Shoe store application developed using SQL and C#.",
           technologies: ["SQL", "C#"],
-          source_code_link: "https://github.com/",
+          source_code_link: "https://github.com/malikayan827/Database-Project-SQL-and-C-sharp-",
+          image:supershoestore
         },
       ],
     },
@@ -319,44 +340,51 @@ import {
         {
           name: "Visual History of Nobel Prize Winners",
           description: "Data visualization project using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/tree/main/A%20Visual%20History%20of%20Nobel%20Prize%20Winners",
+          image:visual
         },
         {
           name: "Android App Market Analysis",
           description: "Data analysis of the Google Play Store's Android app market using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/tree/main/The%20Android%20App%20Market%20on%20Google%20Play",
+          image:android
         },
         {
           name: "World’s Oldest Businesses",
           description: "Data analysis project to discover the world’s oldest businesses using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/blob/main/What%20and%20Where%20are%20the%20World's%20Oldest%20Businesses.py",
+          image:worldoldest
         },
         {
           name: "Dr Semmelweis and Handwashing",
           description: "Data analysis project about Dr. Semmelweis and the discovery of handwashing using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing",
+          image:dr
         },
         {
           name: "Predicting Credit Card Approvals",
           description: "Credit card approval prediction using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/tree/main/Predicting%20Credit%20Card%20Approvals",
+          image:predictingcreditcard
         },
         {
           name: "Netflix Movies and Guest Stars",
           description: "Analysis of Netflix movies and guest stars using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/Machine-Learning-and-Datasciences-using-python/blob/main/Netflix%20Visualisation%20.py",
+          image:netflix
         },
         {
           name: "Stock Data Extraction and Visualization",
           description: "Stock data extraction and visualization project using Python.",
-          technologies: ["Python"],
-          source_code_link: "https://github.com/",
+          technologies: ["Python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/python-project-for-Data-Science-by-Coursera",
+          image:stockdataextraction
         },
       ],
     },
@@ -366,12 +394,13 @@ import {
         {
           name: "Predicting Concrete Compressive Strength",
           description: "Prediction of concrete compressive strength using neural networks.",
-          technologies: ["Machine Learning"],
-          source_code_link: "https://github.com/",
+          technologies: ["python","Jupyter Notebook"],
+          source_code_link: "https://github.com/malikayan827/IBM-AI-ENGINEERING-PROFESSIONAL-CERTIFICATE-BY-COURSERA/tree/main/Predicting%20Concrete%20Compressive%20Strength%20using%20Neural%20Networks",
+          image:concrete
         },
       ],
     },
   ];
   
   
-  export { services, technologies, experiences, projects ,customProjects};
+  export { ozeefy,services, technologies, experiences, projects ,customProjects};

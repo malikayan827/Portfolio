@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { styles } from '../style';
 import { navLinks } from '../constants';
 import { menu, close, logo2, logo3 } from '../assets';
-
+import { github,linkedin } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
@@ -39,6 +39,28 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li>
+                <a
+                  href='https://github.com/malikayan827'
+                  target='_blank'
+                  rel='noreferrer'
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary `}
+                >
+                <img src={github} alt='github' className='w-7 h-7 ' /> 
+                </a>
+                
+              </li>
+              <li>
+                <a
+                  href='https://www.linkedin.com/in/muhammad-ayan-b9643a211/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary `}
+                >
+                <img src={linkedin} alt='github' className='w-6 h-6 mr-10' /> 
+                </a>
+                
+              </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -68,6 +90,28 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href='https://github.com/malikayan827'
+                  target='_blank'
+                  rel='noreferrer'
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary `}
+                >
+                  My github Profile
+                </a>
+                <img src={github} alt='github' className='w-6 h-6' /> 
+              </li>
+              <li>
+                <a
+                  href='https://www.linkedin.com/in/muhammad-ayan-b9643a211/7'
+                  target='_blank'
+                  rel='noreferrer'
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary `}
+                >
+                <img src={linkedin} alt='github' className='w-6 h-6 mr-10' /> 
+                </a>
+                
+              </li>
             </ul>
           </div>
         </div>

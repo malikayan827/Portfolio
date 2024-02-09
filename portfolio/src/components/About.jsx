@@ -1,70 +1,81 @@
-import React from 'react'
-import Tilt from 'react-tilt'
-import { styles } from '../style'
-import { motion } from 'framer-motion'
-import { services
- } from '../constants'
- import { StarWrapper } from '../hoc'
-
-import {fadeIn,textVariant } from '../utils//motion'
-const ServiceCard = ({title,icon,index}) => {
+import React from "react";
+import Tilt from "react-tilt";
+import { styles } from "../style";
+import { motion } from "framer-motion";
+import { services } from "../constants";
+import { StarWrapper } from "../hoc";
+import { resume } from "../assets";
+import { fadeIn, textVariant } from "../utils//motion";
+const ServiceCard = ({ title, icon, index }) => {
   return (
-   <Tilt className="xs:w-[250px] w-full">
-   <motion.div
-    variants={fadeIn("right","spring",0.5*index,0.75)}
-    className='w-full green-pin-gradient p-[1px] rounded-[20px]
-    shadow-card'>
-    <div
-    options={{
-      max:45,
-      scale:1,
-      speed:450,
-    }}
-    className='bg-tertiary rounded-[20px]
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pin-gradient p-[1px] rounded-[20px]
+    shadow-card"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px]
     py-5 px-12 min-h-[280px] 
-    flex justify-evenly items-center flex-col'>
-    <img src={icon} alt={title} 
-    className='w-16 h-16 object-contain'/>
-    <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
-    </div>
-    </motion.div>
-
-   </Tilt>
-  )
-}
- const About = () => {
+    flex justify-evenly items-center flex-col"
+        >
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
+const About = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>Introduction</p>
-      <h2 className={styles.heroHeadText}>
-        Overview
-      </h2>
-    </motion.div>
-    <motion.p variants={fadeIn("","",0.1,1)}
-    className='mt-4 ml-2 text-secondary
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.heroHeadText}>Overview</h2>
+      </motion.div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 ml-2 text-secondary
     text[-17px]
-    max-w-3xl leading-[30px]'>
-    I am a student of Computer Science and a software engineer by profession with a strong foundation in web and mobile
-app development. With hands-on experience in creating dynamic and user-centric
-applications, I've honed my problem-solving abilities and analytical
-mindset.Proficient in Python and passionate about leveraging data to
-derive meaningful insights.I possess a strong analytical mindset and
-problem-solving skills developed through hands-on experience in
-developing applications
-    </motion.p>
-    <div className='mt-20 flex flex-wrap and gap-10
-    '>
-    {services.map((service,index) => (
-      <ServiceCard
-      key={service.title}
-      index={index}
-      {...service}/>))}
+    max-w-3xl leading-[30px]"
+      >
+        I am a student of Computer Science and a software engineer by profession
+        with a strong foundation in web and mobile app development. With
+        hands-on experience in creating dynamic and user-centric applications,
+        I've honed my problem-solving abilities and analytical
+        mindset.Proficient in Python and passionate about leveraging data to
+        derive meaningful insights.I possess a strong analytical mindset and
+        problem-solving skills developed through hands-on experience in
+        developing applications.<br/><strong className={styles.sectionSubText}>For more details, please check my resume: &nbsp;  &nbsp;</strong>
+        
+        <a
+          href={resume}
+          download="Resume"
+          
+          className="text-primary font-bold"
+        >
+        
+        <button type="button" class="text-white bg-tertiary hover:bg-[#915eff] transition-all duration-1000 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">  My resume</button>
+        </a>
+      </motion.p>
 
-    </div>
-    
+      <div
+        className="mt-20 flex flex-wrap and gap-10
+    "
+      >
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default StarWrapper(About, 'about');
+export default StarWrapper(About, "about");
