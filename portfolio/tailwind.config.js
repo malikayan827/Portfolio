@@ -4,10 +4,13 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        "hero": "url('/src/assets/bg.png')",
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
-        tertiary: "#151030",
+        tertiary: "#020617",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
@@ -18,10 +21,32 @@ module.exports = {
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-      },
+      // backgroundImage: {
+      //   "hero-pattern": "url('/src/assets/herobg.png')",
+      // },
     },
+    keyframes: {
+      typing: {
+        "0%": {
+          width: "0%",
+          visibility: "hidden"
+        },
+        "100%": {
+          width: "100%"
+        }  
+      },
+      blink: {
+        "50%": {
+          borderColor: "transparent"
+        },
+        "100%": {
+          borderColor: "white"
+        }  
+      }
+    },
+    animation: {
+      typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+    }
   },
   plugins: [],
 };

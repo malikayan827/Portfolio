@@ -10,6 +10,7 @@ Navbar,
 Tech,
 Works,
 StarsCanvas} from './/components'
+import bg from './assets/bg.png'
 
 
 function App() {
@@ -17,10 +18,12 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className='relative z-0 bg-gray-950'>
+    <body className='bg-hero '>
+    <div className='relative z-0 '>
     
     <div className='="bg-hero-pattern bg-cover
-    bg-no-repeat bg-center'>
+    bg-no-repeat bg-center '>
+    
     
    
       <Navbar />
@@ -42,6 +45,7 @@ function App() {
     
 
     </div>
+    </body>
       
     </BrowserRouter>
     

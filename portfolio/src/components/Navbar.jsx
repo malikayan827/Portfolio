@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../style';
 import { navLinks } from '../constants';
-import { menu, close, logo2, logo3 } from '../assets';
+import { menu, close, logo2, logo3,bg } from '../assets';
 import { github,linkedin } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddindX} w-full flex items-center py-5 fixed top-0 z-20 bg-gray-950`}>
+    <nav className={`${styles.paddindX} w-full flex items-center py-5 fixed top-0 z-20 `}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'

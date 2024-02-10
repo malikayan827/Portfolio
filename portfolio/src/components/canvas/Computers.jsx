@@ -7,7 +7,7 @@ import { Mesh } from "three";
 
 
 const Computers = ({isMobile}) => {
-  const computer=useGLTF('./desktop_pc/scene.gltf')
+  const computer=useGLTF('./computer_and_laptop/scene.gltf')
   return (
     <mesh>
       <hemisphereLight intensity={0.15} 
@@ -23,9 +23,9 @@ const Computers = ({isMobile}) => {
       shadow-mapSize-width={1024}
       />
       <primitive object={computer.scene}
-      scale={isMobile?0.35:0.65}
+      scale={isMobile?0.08:0.1}
       position={isMobile?[0,-1.98,-0.5]:[0,-3.28,-1.6]}
-      rotation={[-0.003,-0.1,-0.1]}
+      rotation={[0.03,-0.3,0.001]}
       />
 
     </mesh>

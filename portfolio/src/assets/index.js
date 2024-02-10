@@ -30,6 +30,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import ozeefy from "./company/ozeefy.jpg";
+import bg from './company/bg.jpg'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -68,7 +69,7 @@ export {
   visual,
   worldoldest,
   android,
-
+bg,
   linkedin,
   resume,
   ozeefy,

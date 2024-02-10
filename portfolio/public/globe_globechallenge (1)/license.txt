@@ -1,0 +1,11 @@
+Model Information:
+* title:	Globe #GlobeChallenge
+* source:	https://sketchfab.com/3d-models/globe-globechallenge-cf359930f8604a04b194b0f7de74f77b
+* author:	Vinny Passmore (https://sketchfab.com/HPrendering)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Globe #GlobeChallenge" (https://sketchfab.com/3d-models/globe-globechallenge-cf359930f8604a04b194b0f7de74f77b) by Vinny Passmore (https://sketchfab.com/HPrendering) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
