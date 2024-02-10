@@ -97,7 +97,7 @@ const Navbar = () => {
                   rel='noreferrer'
                   className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary `}
                 >
-                  My github Profile
+                 
                 </a>
                 <img src={github} alt='github' className='w-6 h-6' /> 
               </li>
